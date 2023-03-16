@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/el_sopas"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".02" />
+
+    <ImageView
+        android:id="@+id/imgAndroid"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/entrada"
+        android:src="@mipmap/entrada"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txvTitulo" />
+
+    <CheckBox
+        android:id="@+id/ckbEntrada"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:checked="false"
+        android:text="@string/entrada"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txvTitulo" />
+
+    <RadioGroup
+        android:id="@+id/rdgGrupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ckbEntrada">
+
+        <RadioButton
+            android:id="@+id/rdbSopa_dia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sopa_dia" />
+
+        <RadioButton
+            android:id="@+id/rdbSopa_azteca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sopa_azteca" />
+
+        <RadioButton
+            android:id="@+id/rdbSopa_hongos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sopa_hongos" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgAndroi"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/entretiempo"
+        android:src="@mipmap/entretiempo"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rdgGrupo" />
+
+    <CheckBox
+        android:id="@+id/ckbEntretiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:checked="false"
+        android:text="@string/entretiempo"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rdgGrupo" />
+
+    <RadioGroup
+        android:id="@+id/rdgGrup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgAndroi">
+
+        <RadioButton
+            android:id="@+id/rdbArroz_mex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/arroz_mex" />
+
+        <RadioButton
+            android:id="@+id/rdbCoditos_crema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/coditos_crema" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgAndro"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/plato_fuerte"
+        android:src="@mipmap/pfuerte"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rdgGrup" />
+
+    <CheckBox
+        android:id="@+id/ckbPlato_fuerte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:checked="false"
+        android:text="@string/plato_fuerte"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rdgGrup" />
+
+    <RadioGroup
+        android:id="@+id/rdgGru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ckbPlato_fuerte">
+
+        <RadioButton
+            android:id="@+id/rdbEnchiladas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enchiladas" />
+
+        <RadioButton
+            android:id="@+id/rdbCarne_asada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/carne_asada" />
+
+        <RadioButton
+            android:id="@+id/rdbChile_relleno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chile_relleno" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgAndroidd"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:contentDescription="@string/bebida"
+        android:src="@mipmap/bebida"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rdgGru" />
+
+    <CheckBox
+        android:id="@+id/ckbBebida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:checked="false"
+        android:text="@string/bebida"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rdgGru" />
+
+    <RadioGroup
+        android:id="@+id/rdgGruppp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ckbBebida">
+
+        <RadioButton
+            android:id="@+id/rdbAgua_dia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agua_dia" />
+
+        <RadioButton
+            android:id="@+id/rdbRefresco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/refresco" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnOrdenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/ordenar"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rdgGruppp" />
+
+    <Button
+        android:id="@+id/btnVer_ordenes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/ver_ordenes"
+        app:layout_constraintHorizontal_bias="0.877"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rdgGruppp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Restaurante</string>
+    <string name="el_sopas">Sopas El Sopas</string>
+    <string name="entrada">Entrada</string>
+    <string name="entretiempo">Entretiempo</string>
+    <string name="plato_fuerte">Plato Fuerte</string>
+    <string name="bebida">Bebida</string>
+    <string name="sopa_dia">Sopa del día</string>
+    <string name="sopa_azteca">Sopa azteca</string>
+    <string name="sopa_hongos">Sopa de hongos</string>
+    <string name="arroz_mex">Arroz a la mexicana</string>
+    <string name="coditos_crema">Coditos a la crema</string>
+    <string name="enchiladas">Enchiladas</string>
+    <string name="carne_asada">Carne asada</string>
+    <string name="chile_relleno">Chile Relleno</string>
+    <string name="agua_dia">Agua del dia</string>
+    <string name="refresco">Refresco</string>
+    <string name="ordenar">Ordenar</string>
+    <string name="ver_ordenes">Ver ordenes</string>
+</resources>
